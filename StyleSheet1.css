@@ -1,0 +1,30 @@
+﻿body
+{
+    background: rgb(187,23,90) url("1.jpg") no-repeat center top;
+    color:Red;
+}
+
+h3
+{
+    color: White;
+}
+h2
+{
+    color: Green;
+}
+p
+{
+    color: white;
+    text-align: center;
+}
+
+td.menu
+{
+    background: grey;
+    color:Black;
+}
+td.menu:hover
+{
+    background: white;
+    color:Blue;
+}

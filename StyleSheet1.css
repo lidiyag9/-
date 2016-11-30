@@ -3,6 +3,10 @@
     background: rgb(187,23,90) url("1.jpg") no-repeat center top;
     color:Red;
 }
+h1
+{
+    text-align:center;
+}
 
 h3
 {
@@ -22,6 +26,7 @@ td.menu
 {
     background: grey;
     color:Black;
+    text-align:center;
 }
 td.menu:hover
 {

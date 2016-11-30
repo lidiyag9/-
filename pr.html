@@ -2,15 +2,13 @@
 <head>
     <title>France</title>
     <link rel="stylesheet" href="StyleSheet1.css" />
-    <link href="favicon.ico" rel="icon">
     <script src="Jscript1.js" type="text/javascript"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link href="favicon.ico" rel="icon" />
+</head>
+<body>
     <script type="text/javascript">
-
-        </head>
-        <body>
-        <script type="text/javascript">
-            ymaps.ready(init);
+        ymaps.ready(init);
         var myMap;
 
         function init() {
@@ -18,37 +16,34 @@
                 center: [55.76, 37.64],
                 zoom: 7
             });
-        }</script>
-    <script type="text/javascript" language="JavaScript">
-        var res="213";
-
-
-    </script>
-
-
+        }
+        </script>
     <h1>
-        <center>Liberté, Égalité, Fraternité</center>
+        Liberté, Égalité, Fraternité
     </h1>
+
     <table border='none' width="100%">
         <tr>
-            <td class="menu" width="33%" onclick="show_text()">
-                <center>INFO</center>
+            <td class="menu" width="25%" onclick="show_text()">
+               INFO
             </td>
-            <td class="menu" onclick="show_pic()">
-                <center>MAP</center>
+            <td class="menu" width="25%" onclick="show_pic()">
+               MAP
             </td>
-            <td class="menu" onclick="show_game()">
-                <center>GAME</center>
+            <td class="menu" width="25%" onclick="show_game()">
+                GAME
+            </td>   
+            <td class="menu">
+                ABOUT
             </td>
-            <li><a class="active" href="https://vk.com/id89681024">Связаться с разработчиком сайта</a></li>
-
-            </li>
         </tr>
         <tr>
-            <td colspan="3">
+            <td colspan="4">
                 <div id="c1">
-                    <center><h2> Французская Республика</h2></center>
-
+                    <center>
+                        <h2>
+                            Французская Республика</h2>
+                    </center>
                     — государство в Западной Европе. Омывается Атлантическим океаном и Средиземным морем.
                     Граничит с Бельгией, Люксембургом, Германией, Швейцарией, Италией, Монако, Испанией
                     и Андоррой. Кроме того, Франция имеет территории в Северной и Южной Америке, Вест-Индии,
@@ -128,7 +123,6 @@
                     до Роны. В высоких горах реки выработали глубокие долины, а ледники, занимавшие
                     эти долины в ледниковую эпоху, расширили и углубили их. Здесь же находится наивысшая
                     точка Франции — самая высокая гора Западной Европы — гора Монблан, 4807 м.
-
                     <center>
                         <h3>
                             Климат
@@ -146,14 +140,14 @@
                 <div id="c2" style="display: none">
                     <div id="map" style="width: 600px; height: 400px; background: pink;">
                     </div>
-
                 </div>
-
                 <div id="c3" style="display: none">
-                    <center><b>Франция</b></center><br /><br />
-                    <span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
-                        Инструкция
-                    </span>
+                    <center>
+                        <b>Франция</b></center>
+                    <br />
+                    <br />
+                    <span style="color: #006699; text-decoration: underline; cursor: pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
+                        Инструкция </span>
                     <br />
                     <div id="instruction" style="display: none; width: 100%;">
                         <ul>
@@ -161,49 +155,64 @@
                             <li>Нажмите на кнопку "Показать результат";</li>
                             <li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
                             <li>За каждый правильный ответ начисляется 1 балл;</li>
-                            <li>Оценки: менее 2.5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 2.5 но менее 3.25 - УДОВЛЕТВОРИТЕЛЬНО, 3.25 и менее 4 - ХОРОШО, 4 - ОТЛИЧНО;</li>
+                            <li>Оценки: менее 2.5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 2.5 но менее 3.25 - УДОВЛЕТВОРИТЕЛЬНО,
+                                3.25 и менее 4 - ХОРОШО, 4 - ОТЛИЧНО;</li>
                             <li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
                         </ul>
                     </div>
                     <form name="test">
-                        <ol>
-                            <li>
-                                <b> Столица Франции?</b><br />
-                                <input type="radio" value="0" name="Q1" /> Токио<br />
-                                <input type="radio" value="1" name="Q1" /> Париж<br />
-                                <input type="radio" value="2" name="Q1" /> Лондон<br />
-                                <br />
-                            </li>
-                            <li>
-                                <b> Достопримечательность Франции?</b><br />
-                                <input type="radio" value="0" name="Q2" /> Эйфелева Башня<br />
-                                <input type="radio" value="1" name="Q2" /> Великая Китайская Стена<br />
-                                <input type="radio" value="2" name="Q2" /> Статуя Свободы<br />
-                                <br />
-                            </li>
-                            <li>
-                                <b> Официальный язык Франции?</b><br />
-                                <input type="radio" value="0" name="Q3" /> Английский<br />
-                                <input type="radio" value="1" name="Q3" /> Испанский<br />
-                                <input type="radio" value="2" name="Q3" /> Французский<br />
-                                <br />
-                            </li>
-                            <li>
-                                <b>Какая река протекает в Париже? </b><br />
-                                <input type="radio" value="0" name="Q4" /> Сена<br />
-                                <input type="radio" value="1" name="Q4" /> Нил<br />
-                                <input type="radio" value="2" name="Q4" /> Лена<br />
-                        </ol>
-                        <CENTER>
-                            <P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
-                            <INPUT onclick="check_me()" type="button" value="Показать результат" />&nbsp;&nbsp;&nbsp;&nbsp;
-                            <INPUT type="reset" value="Сбросить ответы" />
-                        </CENTER>
+                    <ol>
+                        <li><b>Столица Франции?</b><br />
+                            <input type="radio" value="0" name="Q1" />
+                            Токио<br />
+                            <input type="radio" value="1" name="Q1" />
+                            Париж<br />
+                            <input type="radio" value="2" name="Q1" />
+                            Лондон<br />
+                            <br />
+                        </li>
+                        <li><b>Достопримечательность Франции?</b><br />
+                            <input type="radio" value="0" name="Q2" />
+                            Эйфелева Башня<br />
+                            <input type="radio" value="1" name="Q2" />
+                            Великая Китайская Стена<br />
+                            <input type="radio" value="2" name="Q2" />
+                            Статуя Свободы<br />
+                            <br />
+                        </li>
+                        <li><b>Официальный язык Франции?</b><br />
+                            <input type="radio" value="0" name="Q3" />
+                            Английский<br />
+                            <input type="radio" value="1" name="Q3" />
+                            Испанский<br />
+                            <input type="radio" value="2" name="Q3" />
+                            Французский<br />
+                            <br />
+                        </li>
+                        <li><b>Какая река протекает в Париже? </b>
+                            <br />
+                            <input type="radio" value="0" name="Q4" />
+                            Сена<br />
+                            <input type="radio" value="1" name="Q4" />
+                            Нил<br />
+                            <input type="radio" value="2" name="Q4" />
+                            Лена<br />
+                    </ol>
+                    <center>
+                        <p>
+                            <textarea name="s1" rows="4" cols="70" readonly> </textarea>
+                        </p>
+                        <input onclick="check_me()" type="button" value="Показать результат" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="reset" value="Сбросить ответы" />
+                    </center>
                     </form>
                 </div>
+                <div id="c4">
+                Какая я молодец <br />
+                <a class="active" href="https://vk.com/id89681024">Связаться с разработчиком сайта</a>
                 </div>
             </td>
         </tr>
     </table>
-    </body>
+</body>
 </html>

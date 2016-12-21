@@ -38,6 +38,7 @@ function check() {
     rese.innerHTML= "Вы уверены, что " + answer + '?';
 
 }
+
 function check_me()
 {
     var count=0;
@@ -84,8 +85,7 @@ if(nok==4) s="ОТЛИЧНО";
 if(nok<4) s="ХОРОШО";
 if(nok<3.25) s="УДОВЛЕТВОРИТЕЛЬНО";
 if (nok<2.5) s="НЕУДОВЛЕТВОРИТЕЛЬНО";
-    document.test.s1.
-    value="Количество правильных ответов "+nok+". Ваша оценка "+s+";
+    document.test.s1.value="Количество правильных ответов "+nok+". Ваша оценка "+s+".";
  
 with(document.test)
     {

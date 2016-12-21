@@ -16,6 +16,16 @@ h2
 {
     color: Green;
 }
+h4
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+   
+}
+
 p
 {
     color: white;
@@ -24,7 +34,7 @@ p
 
 td.menu
 {
-    background: grey;
+    background: white;
     color:Black;
     text-align:center;
 }
